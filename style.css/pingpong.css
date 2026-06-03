@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: #fff0f6;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+p::first-letter {
+  font-size: 2em;
+  font-style: italic;
+  color: #d8b838
+}
