@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   background-color: #fff0f6;
   margin: 0 auto;
@@ -13,11 +11,6 @@ body {
   padding: 40px 20px;
   background-image: url(../image/background1.png);
   background-size: cover;
-}
-
-body::before {
-  content: "";
-  background: rgba(255, 240, 246, 0.75);
 }
 
 h1 {
@@ -119,92 +112,4 @@ img:hover {
   align-items: center;
   flex-direction: column;
   gap: 8px;
-}
-
-/* ==========================
-   导航栏 + 纯CSS二级下拉菜单
-========================== */
-.navbar {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-.menu>li {
-  position: relative;
-  padding: 14px 22px;
-}
-
-.menu a {
-  color: #d82a7f;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-/* 二级菜单 默认隐藏 */
-.submenu {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: white;
-  min-width: 160px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  list-style: none;
-  padding: 10px 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s;
-}
-
-.submenu li {
-  padding: 8px 15px;
-}
-
-.submenu-parent:hover .submenu {
-  opacity: 1;
-  visibility: visible;
-}
-
-:root {
-  --bg: #fff0f6;
-  --text: #444;
-  --card: rgba(255, 255, 255, 0.85);
-  --main: #d82a7f;
-  --second: #b81a69;
-}
-
-[data-theme="pink"] {
-  --bg: #fff0f6;
-  --card: rgba(255, 255, 255, 0.85);
-  --main: #d82a7f;
-}
-
-[data-theme="dark"] {
-  --bg: #1a1a1a;
-  --text: #fff;
-  --card: #2d2d2d;
-  --main: #ff5ba6;
-  --second: #ff8fc9;
-}
-
-
-[data-theme="light"] {
-  --bg: #ffffff;
-  --text: #333;
-  --card: #f9f9f9;
-  --main: #444;
-  --second: #777;
 }

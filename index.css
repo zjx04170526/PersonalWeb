@@ -1,0 +1,129 @@
+/* 通配符选择器，设置所有元素的默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+  /* 去除div默认内外边距 */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b1420b38;
+  padding: 20px 40px;
+}
+
+h1 {
+  color: #7c57a6;
+  text-align: center;
+  /* font-style: italic; */
+  font-size: 42px;
+  padding-bottom: 18px;
+  border-bottom: 3px solid #ff8400;
+  letter-spacing: 48px;
+}
+
+/* flex 布局 */
+.container {
+  padding: 20px;
+  /* 设置为flex布局 */
+  display: flex;
+  /* 主轴排列方向为竖直方向 */
+  flex-direction: column;
+  /* 主轴（垂直方向）居中对齐 */
+  justify-content: center;
+  /* 交叉轴（水平方向）居中对齐 */
+  align-items: center;
+  /* 子元素间距为20px */
+  gap: 20px;
+}
+
+a {
+  color: #b1420b38;
+  text-decoration: none;
+  /* font-size: 18px;
+  font-weight: 550;
+  letter-spacing: 1px; */
+}
+
+table {
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+th {
+  padding: 16px 30px;
+  border: 1px solid rgba(255, 132, 0, 0.35);
+  background-color: #ff840026;
+  color: #7c57a6;
+  /* letter-spacing: 2px; */
+}
+
+td {
+  padding: 16px 30px;
+  border: 1px solid rgba(255, 132, 0, 0.35);
+}
+
+a:hover {
+  color: brown;
+  text-decoration: underline;
+}
+
+img {
+  border: 3px solid #b1420b38;
+  border-radius: 20px;
+}
+
+.theme-btn {
+  width: 120px;
+  height: 40px;
+  background-color: #ff8400;
+  border: none;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.879);
+}
+
+.theme-btn:hover {
+  background-color: #ffb667;
+}
+
+.theme-toggle {
+  background-color: #ff161638;
+}
+
+.menu {
+  font-size: 24px;
+}
+
+.first-menu {
+  list-style: none;
+  /* 去掉默认小圆点 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.option {
+  position: relative;
+  width: 120px;
+  height: 64px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.second-menu {
+  list-style: none;
+  /* 去掉默认小圆点 */
+  position: absolute;
+  left: 0;
+  top: 64px;
+  display: none;
+  padding-left: 0;
+}
+
+.option:hover .second-menu {
+  display: block;
+}
