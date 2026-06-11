@@ -1,11 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1 {
   text-align: center;
 }
 
 body {
   background-color: #fff0f6;
-  margin: 0 auto;
-  text-align: justify;
+}
+
+p {
+  text-indent: 2em;
 }
 
 p::first-letter {

@@ -6,66 +6,49 @@
 
 body {
   background-color: #fff0f6;
-  margin: 0 auto;
-  text-align: center;
   padding: 40px 20px;
   background-image: url(../image/background1.png);
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   color: #d82a7f;
-  text-align: center;
-  font-style: italic;
+  letter-spacing: 40px;
   font-size: 42px;
   margin-bottom: 45px;
-  background: linear-gradient(90deg, #d82a7f, #ff579c);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+}
+
+h1 span {
+  letter-spacing: 0;
 }
 
 h2 {
   color: #b81a69;
-  font-style: italic;
   font-size: 30px;
   letter-spacing: 4px;
-  margin: 50px 0 35px;
+  margin: 50px 0;
   position: relative;
 }
 
-h2::after {
-  content: "";
-  width: 80%;
-  height: 3px;
-  background-color: #d82a7f;
-  border-radius: 3px;
-  position: absolute;
-  left: 10%;
-  bottom: -8px;
-  display: block;
-}
-
 table {
-  margin: 0 auto 40px;
   border-collapse: collapse;
   border: 2px solid #d82a7f;
   background-color: rgba(255, 255, 255, 0.75);
-  box-shadow: 0 0 20px rgba(216, 42, 127, 0.25);
-  overflow: hidden;
 }
 
 th,
 td {
   padding: 15px 25px;
   border: 1px solid #f8c8dc;
-  font-size: 16px;
 }
 
 th {
   background-color: #d82a7f;
   color: #fff;
-  font-weight: bold;
-  letter-spacing: 2px;
 }
 
 td {
@@ -77,13 +60,13 @@ a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
-  letter-spacing: 2px;
-  /* display: inline-block; */
+  transition: all 0.3s;
 }
 
 a:hover {
-  color: aqua;
+  color: skyblue;
   text-decoration: underline;
+  transform: perspective(1000px) rotateY(360deg) scale(1.1);
 }
 
 img {
