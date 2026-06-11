@@ -1,31 +1,60 @@
 <head>
   <title>个人简介</title>
+  <link rel="stylesheet" href="../index.css">
   <link rel="stylesheet" href="../css/information.css">
 </head>
 
 <body>
-  <table border="2">
-    <thead>
-      <tr>
-        <th colspan="3">个人简介</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>姓名：朱家欣</td>
-        <td>性别：女</td>
-        <td rowspan="3">免冠照片</td>
-      </tr>
-      <tr>
-        <td>学校：北方工业大学</td>
-        <td>专业：计算机科学与技术</td>
-      </tr>
-      <tr>
-        <td>班级：计实验25</td>
-        <td>学号：25101130115</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="header">
+    <button class="theme-btn">切换主题</button>
+    <h1>欢迎来到我的个人界面</h1>
+  </div>
+  <div class="menu">
+    <ul class="first-menu">
+      <li class="option"><a href="../index.html">首页</a></li>
+      <li class="option">
+        <div class="option-tilte">个人简介</div>
+        <ul class="second-menu">
+          <li class="option"><a href="../html/information.html" title="information">个人资料</a></li>
+          <li class="option"><a href="../html/experience.html" title="experience">个人经历</a></li>
+          <li class="option"><a href="../html/hobby.html" title="hobby">兴趣爱好</a></li>
+        </ul>
+      </li>
+      <li class="option"><a href="../html/itzy.html">ITZY</a>
+        <ul class="second-menu">
+          <li class="option"><a href="../html/yeji.html" title="yeji">黄礼志</a></li>
+          <li class="option"><a href="../html/lia.html" title="lia">崔智秀</a></li>
+          <li class="option"><a href="../html/Ryujin.html" title="Ryujin">申留真</a></li>
+          <li class="option"><a href="../html/chaeryeong.html" title="chaeryeong">李彩领</a></li>
+          <li class="option"><a href="../html/yuna.html" title="yuna">申有娜</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="content">
+    <table border="2">
+      <thead>
+        <tr>
+          <th colspan="3">个人简介</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>姓名：朱家欣</td>
+          <td>性别：女</td>
+          <td rowspan="3">免冠照片</td>
+        </tr>
+        <tr>
+          <td>学校：北方工业大学</td>
+          <td>专业：计算机科学与技术</td>
+        </tr>
+        <tr>
+          <td>班级：计实验25</td>
+          <td>学号：25101130115</td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="../index.js"></script>
 </body>
 
 </html>

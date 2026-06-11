@@ -1,36 +1,66 @@
 <head>
-  <title>兴趣爱好</title>
+  <title>个人简介</title>
+  <link rel="stylesheet" href="../index.css">
   <link rel="stylesheet" href="../css/hobby.css">
 </head>
 
 <body>
-  <table border="2">
-    <thead>
-      <tr>
-        <th>兴趣爱好</th>
-      </tr>
-    </thead>
-    <tbody>
-      <td>
-        <ol>
-          <li>
-            <a href="../html/itzy.html" title="itzy" target="_blank">itzy</a>
-          </li>
-          <li>
-            打<a href="../html/pingpong.html" title="乒乓球" target="_blank">乒乓球</a>
-          </li>
-          <li>
-            旅行
-          </li>
-        </ol>
-      </td>
-    </tbody>
-  </table>
-  <div class="images">
-    <img src="../image/1.jpg" alt="itzy" title="itzy">
-    <img src="../image/3.png" alt="deepseek" title="deepseek">
-    <img src="../image/2.jpg" alt="风景图" title="旅行风景图">
+  <div class="header">
+    <button class="theme-btn">切换主题</button>
+    <h1>欢迎来到我的个人界面</h1>
   </div>
+  <div class="menu">
+    <ul class="first-menu">
+      <li class="option"><a href="../index.html">首页</a></li>
+      <li class="option">
+        <div class="option-tilte">个人简介</div>
+        <ul class="second-menu">
+          <li class="option"><a href="../html/information.html" title="information">个人资料</a></li>
+          <li class="option"><a href="../html/experience.html" title="experience">个人经历</a></li>
+          <li class="option"><a href="../html/hobby.html" title="hobby">兴趣爱好</a></li>
+        </ul>
+      </li>
+      <li class="option"><a href="../html/itzy.html">ITZY</a>
+        <ul class="second-menu">
+          <li class="option"><a href="../html/yeji.html" title="yeji">黄礼志</a></li>
+          <li class="option"><a href="../html/lia.html" title="lia">崔智秀</a></li>
+          <li class="option"><a href="../html/Ryujin.html" title="Ryujin">申留真</a></li>
+          <li class="option"><a href="../html/chaeryeong.html" title="chaeryeong">李彩领</a></li>
+          <li class="option"><a href="../html/yuna.html" title="yuna">申有娜</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="content">
+    <table border="2">
+      <thead>
+        <tr>
+          <th>兴趣爱好</th>
+        </tr>
+      </thead>
+      <tbody>
+        <td>
+          <ol>
+            <li>
+              <a href="../html/itzy.html" title="itzy" target="_blank">itzy</a>
+            </li>
+            <li>
+              打<a href="../html/pingpong.html" title="乒乓球" target="_blank">乒乓球</a>
+            </li>
+            <li>
+              旅行
+            </li>
+          </ol>
+        </td>
+      </tbody>
+    </table>
+    <div class="images">
+      <img src="../image/1.jpg" alt="itzy" title="itzy">
+      <img src="../image/3.png" alt="deepseek" title="deepseek">
+      <img src="../image/2.jpg" alt="风景图" title="旅行风景图">
+    </div>
+  </div>
+  <script src="../index.js"></script>
 </body>
 
 </html>

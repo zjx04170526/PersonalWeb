@@ -1,17 +1,75 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #f8f5ff;
+
 }
 
-h1 {
+.theme-btn {
+  background-color: #7e22ce;
+}
+
+.theme-btn:hover {
+  background-color: #9355ca;
+}
+
+.header h1 {
   color: #7e22ce;
 }
 
-h2 {
-  color: #6b21a8;
+.option-tilte {
+  color: #7e22ce;
+}
+
+a {
+  color: #7e22ce;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a47ac9;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: calc(80vh - 64px);
+  padding: 20px;
+}
+
+h2,
+h3 {
+  color: #7e22ce;
+  line-height: 3;
+}
+
+p {
+  text-indent: 2em;
+  color: #9f70c8;
+  line-height: 2;
+}
+
+table {
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.72);
+  border: none;
+}
+
+th {
+  padding: 8px 24px;
+  border: 1px solid #7e22ce;
+  background-color: #e3c2ff;
+  color: #7e22ce;
+}
+
+td {
+  padding: 0 24px;
+  border: 1px solid #7e22ce;
+}
+
+img {
+  border: 3px solid #7e22ce;
+  border-radius: 20px;
+  height: 200px;
+  margin: 16px 0;
 }

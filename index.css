@@ -5,62 +5,30 @@
 }
 
 body {
-  background-color: #b1420b38;
-  padding: 20px 40px;
+  background-color: #ffdccb;
 }
 
-h1 {
-  color: #7c57a6;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  position: relative;
+  padding: 20px;
+}
+
+.header h1 {
+  color: #ff8400;
   text-align: center;
   font-size: 42px;
   padding-bottom: 18px;
-  border-bottom: 3px solid #ff8400;
   letter-spacing: 48px;
 }
 
-.container {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-a {
-  color: #b1420b38;
-  text-decoration: none;
-}
-
-table {
-  border-collapse: collapse;
-  background: rgba(255, 255, 255, 0.72);
-  border: none;
-}
-
-th {
-  padding: 16px 30px;
-  border: 1px solid rgba(255, 132, 0, 0.35);
-  background-color: #ff840026;
-  color: #7c57a6;
-}
-
-td {
-  padding: 16px 30px;
-  border: 1px solid rgba(255, 132, 0, 0.35);
-}
-
-a:hover {
-  color: brown;
-  text-decoration: underline;
-}
-
-img {
-  border: 3px solid #b1420b38;
-  border-radius: 20px;
-}
-
 .theme-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
   width: 120px;
   height: 40px;
   background-color: #ff8400;
@@ -74,7 +42,7 @@ img {
 }
 
 .theme-toggle {
-  background-color: #ff161638;
+  background-color: rgba(255, 142, 142, 0.22)
 }
 
 .menu {
@@ -102,7 +70,7 @@ img {
 }
 
 .option-tilte {
-  color: #b1420b38;
+  color: #ff8400;
 }
 
 .second-menu {
@@ -115,4 +83,13 @@ img {
 
 .option:hover .second-menu {
   display: block;
+}
+
+a {
+  color: #ff8400;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffd3a4;
 }
