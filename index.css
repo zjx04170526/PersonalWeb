@@ -10,7 +10,8 @@ body {
 
 .header {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   height: 20vh;
   position: relative;
@@ -34,7 +35,7 @@ body {
   background-color: #ff8400;
   border: none;
   border-radius: 10px;
-  color: rgba(255, 255, 255, 0.879);
+  color: white;
 }
 
 .theme-btn:hover {
@@ -43,6 +44,21 @@ body {
 
 .theme-toggle {
   background-color: rgba(255, 142, 142, 0.22)
+}
+
+.time {
+  color: #ff8400;
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  color: #ff8400;
+  /* position: relative; */
+}
+
+.marquee {
+  display: inline-block;
 }
 
 .menu {
@@ -59,9 +75,10 @@ body {
 
 .option {
   position: relative;
-  width: 144px;
+  z-index: 1;
+  width: 196px;
   height: 64px;
-  background-color: #fff;
+  background-color: #fff5f1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +86,7 @@ body {
   border-radius: 10px;
 }
 
-.option-tilte {
+.option-title {
   color: #ff8400;
 }
 

@@ -1,23 +1,39 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
 }
 
-h1 {
-  text-align: center;
+h2,
+h3,
+h4 {
+  color: #ff8400;
+  line-height: 3;
 }
 
-body {
-  background-color: #fff0f6;
+img {
+  border: 3px solid #ff8400;
+  border-radius: 20px;
+  height: 200px;
+  margin: 16px 0;
 }
 
 p {
   text-indent: 2em;
+  color: #ff8400;
+  line-height: 2;
 }
 
 p::first-letter {
   font-size: 2em;
   font-style: italic;
-  color: #d8b838
+  color: #ff8400
+}
+
+.content li {
+  color: #ff8400;
+  line-height: 2;
+  margin-left: 20px;
 }

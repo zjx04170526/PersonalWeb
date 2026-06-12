@@ -11,12 +11,15 @@ body {
   background-color: #5eb380;
 }
 
-.header h1 {
+.header h1,
+.time,
+.marquee-container,
+.option-title {
   color: #38b168;
 }
 
-.option-tilte {
-  color: #38b168;
+.option {
+  background-color: #fbfefc;
 }
 
 a {
@@ -51,7 +54,7 @@ p {
 
 table {
   border-collapse: collapse;
-  background: rgba(255, 255, 255, 0.72);
+  background-color: #fbfefc;
   border: none;
 }
 

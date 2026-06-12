@@ -11,9 +11,10 @@ table {
   width: 570px;
   height: 230px;
   border-collapse: collapse;
-  background: rgba(255, 255, 255, 0.72);
+  background-color: #fff5f1;
   border: none;
   font-size: 18px;
+  color: #ffb362;
 }
 
 th {

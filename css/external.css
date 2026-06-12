@@ -1,0 +1,51 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  min-height: calc(80vh - 64px);
+  gap: 60px;
+}
+
+h3 {
+  color: #ff8400;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+a:hover {
+  color: #ffbb73;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  border: 3px solid #ff8400;
+  border-radius: 40px;
+  margin: 8px;
+  height: 300px;
+  transition: all 1s;
+}
+
+img:hover {
+  box-shadow: 0 12px 35px #ffb96f;
+  transform: perspective(1000px) rotateY(360deg) scale(1.1);
+}
+
+.content p {
+  color: #ffb362;
+  font-size: 24px;
+}
