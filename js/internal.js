@@ -1,6 +1,6 @@
 // 站内搜索
-const all = ['首页', '个人简介', '个人资料', '个人经历', '兴趣爱好', '乒乓球', 'NCUT', 'ITZY', '黄礼志', '崔智秀', '申留真', '李彩领', '申有娜', '站内搜索', '站外搜索', '天气预报'];
-const pages = ['index', 'resume', 'information', 'experience', 'hobby', 'pingpong', 'ncut', 'itzy', 'yeji', 'lia', 'Ryujin', 'chaeryeong', 'yuna', 'internal', 'external', 'weather'];
+const all = ['首页', '个人简介', '个人资料', '个人经历', '兴趣爱好', '乒乓球', 'NCUT', '站内搜索', '站外搜索', 'Google搜索', 'Bing搜索', '天气预报', 'ITZY', '黄礼志', '崔智秀', '申留真', '李彩领', '申有娜', '随机点名器', '倒计时计算器'];
+const pages = ['index', 'resume', 'information', 'experience', 'hobby', 'pingpong', 'ncut', 'internal', 'external', 'google', 'bing', 'weather', 'itzy', 'yeji', 'lia', 'Ryujin', 'chaeryeong', 'yuna', 'name', 'time'];
 const input = document.querySelector('.search-input');
 const result = document.querySelector('.search-result');
 input.addEventListener('focus', function () {

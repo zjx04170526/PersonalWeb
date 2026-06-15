@@ -42,4 +42,4 @@ setInterval(function () {
   if (x < -128) {
     x = window.innerWidth;
   }
-}, 1); // 间隔
+}, 1);

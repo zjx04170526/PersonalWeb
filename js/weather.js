@@ -19,8 +19,8 @@ async function getRealtimeWeather() {
         <div class="weather">天气：${item.textDay}</div>
         <div class="vis">能见度：${item.vis}km</div>
         <div class="wind-direction">风向：${item.windDirDay}</div>
-        <div class="wind-scale">风力：${item.windScaleDay}</div>
-        <div class="wind-speed">风速：${item.windSpeedDay} km/h</div>
+        <div class="wind-scale">风力：${item.windScaleDay}级</div>
+        <div class="wind-speed">风速：${item.windSpeedDay}km/h</div>
       </div>
       `
     }
