@@ -1,14 +1,14 @@
 // 倒计时计时器
 const startBtn = document.querySelector('.start-btn');
-const remain = document.querySelector('.remain');
-const date = document.querySelector('.date');
 startBtn.addEventListener('click', function () {
+  const date = document.querySelector('.date');
   if (date.value !== '') {
     startBtn.disabled = true;
-    const timeInterval = setInterval(() => {
+    const timeInterval = setInterval(function () {
       const end = new Date(date.value).getTime();
       const now = new Date().getTime();
       const wait = end - now;
+      const remain = document.querySelector('.remain');
       if (wait <= 0) {
         clearInterval(timeInterval);
         remain.innerHTML = '倒计时结束！';

@@ -7,8 +7,8 @@ input.addEventListener('focus', function () {
   result.classList.toggle('show-result');
 })
 input.addEventListener('blur', function () {
-  setTimeout(() => {
-    result.classList.remove('show-result');
+  setTimeout(function () {
+    result.classList.toggle('show-result');
   }, 100);
 })
 input.addEventListener('input', function () {

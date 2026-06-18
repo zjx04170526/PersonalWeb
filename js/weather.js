@@ -1,6 +1,6 @@
 // 天气预报
 axios({
-  url: 'http://hmajax.itheima.net/api/weather',
+  url: 'http://hmajax.itheima.net/api/weather?',
   method: 'get',
   params: {
     city: '110100'
@@ -8,7 +8,7 @@ axios({
 }).then(res => {
   console.log(res);
   let html = `<h2>${res.data.data.area}未来7日天气预报</h2>`
-  for (let i = 0; i < res.data.data.dayForecast.length; i++) {
+  for (let i = 0; i < 7; i++) {
     const item = res.data.data.dayForecast[i];
     html += `
       <div class="weather-card">

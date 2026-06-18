@@ -43,7 +43,7 @@ body {
 }
 
 .theme-toggle {
-  background-color: rgba(255, 142, 142, 0.22)
+  background-color: rgb(250, 217, 217)
 }
 
 .time {
@@ -54,7 +54,6 @@ body {
   width: 100%;
   overflow: hidden;
   color: #ff8400;
-  /* position: relative; */
 }
 
 .marquee {
@@ -95,7 +94,6 @@ body {
   position: absolute;
   top: 64px;
   display: none;
-  padding-left: 0;
 }
 
 .option:hover .second-menu {
@@ -128,4 +126,8 @@ a:hover {
 .content p {
   font-size: 24px;
   line-height: 1.5;
+}
+
+.option:hover {
+  color: black;
 }

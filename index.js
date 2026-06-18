@@ -6,6 +6,7 @@ themeBtn.addEventListener('click', function () {
 });
 document.body.className = localStorage.getItem('theme');
 
+
 // 动态显示时间和问候语
 function getTime() {
   const now = new Date();
@@ -34,12 +35,22 @@ getTime();
 setInterval(getTime, 1000);
 
 // 跑马灯效果
-const marquee = document.querySelector('.marquee');
-let x = window.innerWidth;
-setInterval(function () {
-  x--;
-  marquee.style.transform = `translateX(${x}px)`;
-  if (x < -128) {
-    x = window.innerWidth;
-  }
-}, 1);
+function createMarquee() {
+  const box = document.createElement('div');
+  box.className = 'marquee-container';
+  const marquee = document.createElement('span');
+  marquee.className = 'marquee';
+  marquee.innerHTML = '欢迎光临我的博客';
+  box.appendChild(marquee);
+  const header = document.querySelector('.header');
+  header.appendChild(box);
+  let x = window.innerWidth;
+  setInterval(function () {
+    x--;
+    marquee.style.transform = `translateX(${x}px)`;
+    if (x < -128) {
+      x = window.innerWidth;
+    }
+  }, 1);
+}
+createMarquee();
